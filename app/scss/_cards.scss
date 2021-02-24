@@ -1,3 +1,18 @@
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  &-container {
+    display: flex;
+    width: 90vw;
+    @media (max-width: 480px)  {
+      width: 100vw;
+    }
+  }
+}
 .panel {
   background-size: cover;
   background-position: center;
@@ -15,13 +30,6 @@
    @media (max-width: 480px) {
       display: none;
     } 
-  }
-  &__inner {
-    display: flex;
-    width: 90vw;
-    @media (max-width: 480px)  {
-      width: 100vw;
-    }
   }
   h3 {
     font-size: 24px;
