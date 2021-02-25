@@ -21,41 +21,39 @@
 		}
 	}
 }
-.circle {
-	&-container {
- 		position: fixed;
-  	top: -100px;
-  	left: -100px;
-  }
-	&-btn {
+.circle-container {
+	position: fixed;
+	top: -100px;
+	left: -100px;
+	.circle-btn {
   	background-color: #ff7979;
   	height: 200px;
   	width: 200px;
   	border-radius: 50%;
   	position: relative;
   	transition: transform 0.5s linear;
-  }
-	button {
-	  cursor: pointer;
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  height: 100px;
-	  background: transparent;
-	  border: 0;
-	  font-size: 26px;
-	  color: #fff;
-	  &:focus {
-	  	outline: none;
-	  }
-	  &#open {
-	  	left: 60%;
-	  }
-	  &#close {
-	  	top: 60%;
-  		transform: rotate(90deg);
-  		transform-origin: top left;
-	  }
+		button {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  height: 100px;
+		  background: transparent;
+		  border: 0;
+		  font-size: 26px;
+		  color: #fff;
+	  	&:focus {
+	  		outline: none;
+	  	}
+	  	&#open {
+	  		left: 60%;
+	  	}
+	  	&#close {
+		  	top: 60%;
+	  		transform: rotate(90deg);
+	  		transform-origin: top left;
+		  }
+		}
 	}
 }
 
@@ -76,7 +74,7 @@ nav {
 	  transition: transform 0.4s ease-in;
 	  & + li {
 	  	margin-left: 15px;
-	  	ransform: translateX(-150%);
+	  	transform: translateX(-150%);
 	  }
 	  & + li + li {
 	  	margin-left: 30px;
