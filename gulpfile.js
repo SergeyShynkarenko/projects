@@ -15,6 +15,7 @@ let paths = {
 			baseDir + '/js/steps.js',
 			baseDir + '/js/navigation.js',
 			baseDir + '/js/search.js',
+			baseDir + '/js/scroll.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',
